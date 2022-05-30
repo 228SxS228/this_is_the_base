@@ -199,14 +199,55 @@ class FourteenQuestion {
 }
 // let fourteenQuestion = new FourteenQuestion().fioCheck();
 
-export function fifteenQestion(a) {
-    a = -4;
-    if (a < 0) {
-        console.log("Это больше");
-        return 0;
-    } else {
-        console.error("Меньше нуля");
-        return 1;
+// export function fifteenQestion(a) {
+//     a = -4;
+//     if (a < 0) {
+//         console.log("Это больше");
+//         return 0;
+//     } else {
+//         console.error("Меньше нуля");
+//         return 1;
+//     }
+// }
+
+class SixteenQuestion {
+    checkReact() {
+        let a = 5;
+        let b = 5;
+        let c = 5;
+        let d = 5;
+
+        if (a == b && 2 * a == b) {
+            console.log("Это квадрат");
+        } else if ((a = b) && (b = c) && (c = d)) {
+            console.log("Прямоугольник");
+        } else {
+            console.log("Четырехугольник");
+        }
     }
 }
+// let sixteenQuestion = new SixteenQuestion().checkReact();
 
+class SeventeenQuestion {
+    chekcUser() {
+        let user = false;
+        var yroki = [];
+        for (var i = 0; i < 100; ++i) yroki[i] = i + 1;
+        if (user === true) {
+            console.log(yroki, "Вы премиум");
+        } else if (user === false) {
+            console.log(yroki[0], "Вы не премиум усер");
+        }
+    }
+}
+// let seventeenQuestion = new SeventeenQuestion().chekcUser();
+
+class EighteenQuestion{
+    constructor(){
+        let player = 1;
+    }
+
+    game(){
+        
+    }
+}
