@@ -1,9 +1,5 @@
 class OneQuestion {
-    triangleСheck() {
-        let int1 = 5;
-        let int2 = 5;
-        let int3 = 3;
-
+    triangleСheck(int1, int2, int3) {
         if (int1 + int2 > int3) {
             if (int1 + int3 > int2) {
                 if (int2 + int3 > int1) {
@@ -22,12 +18,7 @@ class OneQuestion {
 // let oneQuestion = new OneQuestion().triangleСheck();
 
 class TwoQuestion {
-    minCheck() {
-        let a = 4;
-        let b = 4;
-        let c = 0;
-        let d = -4;
-
+    minCheck(a, b, c, d) {
         let z = Math.min(a, b, c, d);
         console.log(z);
     }
@@ -35,10 +26,7 @@ class TwoQuestion {
 // let twoQuestion = new TwoQuestion().minCheck();
 
 class FourQuestion {
-    angleChekc() {
-        let a = 40;
-        let b = 60;
-        let c = 20;
+    angleChekc(a, b, c) {
         if (a + b + c == 180) {
             console.log("параметры сопадают");
         } else if (a == b && b == c) {
@@ -71,8 +59,8 @@ class FiveQuestion {
 // let fiveQuestion = new FiveQuestion().ageChekc();
 
 class SixQuestion {
-    goCheck() {
-        let a = prompt("Сколько вам лет?", "");
+    goCheck(a) {
+        a = prompt("Сколько вам лет?", "");
         if (a < 7) {
             console.log("Сегодня в сад");
         } else if (a > 7 && a < 18) {
@@ -109,8 +97,7 @@ class SevenQuestion {
 class EightQuestion {}
 
 class NineQuestion {
-    waterCheck() {
-        const a = 2;
+    waterCheck(a) {
         if (a === 0) {
             console.log("Лед");
         } else if (a === 1) {
@@ -125,9 +112,7 @@ class NineQuestion {
 // let nineQuestion = new NineQuestion().waterCheck();
 
 class TenQuestion {
-    genderCheck() {
-        const a = "Гетеро";
-        const b = "Гетеро";
+    genderCheck(a, b) {
         if (a || b == "Гетеро") {
             console.log("Любви и добра вам");
         } else if (a || b == "Гомосексуальный") {
@@ -138,9 +123,7 @@ class TenQuestion {
 // let tenQuestion = new TenQuestion().genderCheck();
 
 class ElevenQuestion {
-    lineCheck() {
-        let a = "Baa";
-        let b = "";
+    lineCheck(a, b) {
         if (a.trim() && b.trim() === "") {
             return console.log(false);
         }
@@ -168,8 +151,8 @@ class TwelveQuestion {
 // let twelveQuestion = new TwelveQuestion().urlCheck();
 
 class ThirteenQuestion {
-    meanCheck() {
-        const a = [3, 3, 3, 5, 4];
+    meanCheck(a) {
+        a = [3, 3, 3, 5, 4];
         let b = a.reduce((a, b) => a + b, 0);
         let v = b / a.length;
         console.log(v);
@@ -185,9 +168,7 @@ class ThirteenQuestion {
 // let thirteenQuestion = new ThirteenQuestion().meanCheck();
 
 class FourteenQuestion {
-    fioCheck() {
-        const a = "Иван";
-        const b = "Нана";
+    fioCheck(a,b) {
         if (a === "Иван" && b === "Иванов") {
             console.log("кОМБО");
         } else if (a === "Иван" || b === "Иванов") {
@@ -211,12 +192,7 @@ class FourteenQuestion {
 // }
 
 class SixteenQuestion {
-    checkReact() {
-        let a = 5;
-        let b = 5;
-        let c = 5;
-        let d = 5;
-
+    checkReact(a,b,c,d) {
         if (a == b && 2 * a == b) {
             console.log("Это квадрат");
         } else if ((a = b) && (b = c) && (c = d)) {
@@ -229,10 +205,9 @@ class SixteenQuestion {
 // let sixteenQuestion = new SixteenQuestion().checkReact();
 
 class SeventeenQuestion {
-    chekcUser() {
-        let user = false;
-        var yroki = [];
-        for (var i = 0; i < 100; ++i) yroki[i] = i + 1;
+    chekcUser(user) {
+        let yroki = [];
+        for (let i = 0; i < 100; ++i) yroki[i] = i + 1;
         if (user === true) {
             console.log(yroki, "Вы премиум");
         } else if (user === false) {
@@ -242,12 +217,6 @@ class SeventeenQuestion {
 }
 // let seventeenQuestion = new SeventeenQuestion().chekcUser();
 
-class EighteenQuestion{
-    constructor(){
-        let player = 1;
-    }
-
-    game(){
-        
-    }
+class EighteenQuestion {
+    game() {}
 }
